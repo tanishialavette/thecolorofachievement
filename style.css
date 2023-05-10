@@ -1,0 +1,218 @@
+body{
+  position: relative;
+  display: block;
+  overflow-x: hidden;
+  margin: 0;
+}
+#topimages{
+  width: 100vw;
+  height: 100vh;
+  background-color:white;
+  object-fit: contain;
+}
+/* .headerflashimage{
+height: 100%;
+width: auto;
+margin: 0 auto; 
+}*/
+.headerflashimage {
+  opacity: 0;
+  /* animation: fade-in-out 2s; */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: auto;
+  margin: 0 auto;
+  height: 100%;
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#splashvideo video{
+  margin-top: 0;
+  width: 100vw;
+  height: auto;
+}
+#headerimages{
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: fit-content;
+    width: fit-content;
+}
+#headerimages #arrow{
+  height: 50px;
+  width: 100px;
+  z-index: 100;
+  position: absolute;
+  top: 165vh; 
+  right: 0;
+  background-color: aqua;
+}
+#DefinitionsBlock img{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    /* opacity:0 */
+  }
+  
+  #DefinitionsBlock img:first-child{
+    position:relative
+  }
+  
+  #DefinitionsBlock{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+  }
+  .masonrycontain{
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+  }
+  .masonry { 
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -8px; Adjustment for the gutter */
+    /* background-color: aqua; */
+  }
+  .masonry-brickcontainer{
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .masonry-brick {
+    /* flex: auto; */
+    /* max-height: auto; */
+    /* max-width: 10%; */
+    aspect-ratio: 1/1;
+    /* min-width: 150px; */
+    /* margin: 0 8px 8px 0; Some gutter */
+    object-fit: cover;
+    background-color: black;
+    width: 100%;
+  }
+  .masonry-brick:nth-child(4n+1) {
+    /* width: 250px; */
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+2) {
+    /* width: 325px; */
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+3) {
+    /* width: 180px; */
+  }
+  .masonry-brick:nth-child(4n+1):nth-child(4n+4) {
+    /* width: 380px; */
+  }
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color:black;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav img{
+    height: 55px;
+    width: auto;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color:white;
+    color: white;
+  }
+  #scroll{
+  overflow: hidden; 
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: yellow;
+  }
+  #scrollimage{
+    object-fit: cover;
+  }
+  #block1 p{
+    padding-top: 170vh;
+    width: 30%;
+    padding-bottom: 100vh;
+    position: relative;
+    z-index: 10;
+  }
+  .flex{
+    display: flex;
+  }
+  .flex img{
+    width: 33%;
+    height: auto; 
+  }
+  .flex p{
+    width: 33%;
+  }
+iframe{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+  border: none;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.graphButton{
+  position: absolute;
+  top: 0; 
+  left: 0;
+}
+#sidescroller{
+  display:flex;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  white-space: nowrap;
+  /* height: 100vh;
+  width: 100vw; */
+}
+#sidescroller div{
+  height: 100vh;
+  width: 100vw;
+}
